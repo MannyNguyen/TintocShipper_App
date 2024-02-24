@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_order_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/gray_border_square_box"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_order_code"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/blue_box"
+                android:orientation="horizontal">
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:id="@+id/txt_number_order_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="8dp"
+                    android:text="#1545578"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="12sp"
+                    app:font_family="segoe_bold" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="16dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/ic_information" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_type_order"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <vn.app.tintocshipper.config.MyTextView
+                        android:id="@+id/txt_status"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/id"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorShopInfoOne"
+                        app:font_family="segoe_semi_bold" />
+
+                    <vn.app.tintocshipper.config.MyTextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorShopInfoOne"
+                        app:font_family="segoe_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_call"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ic_phone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:id="@+id/myTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/date"
+                    android:textSize="12sp"
+                    app:font_family="segoe_light" />
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp"
+                    app:font_family="segoe_semi_bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/item_address"
+                    android:textSize="12sp"
+                    app:font_family="segoe_light" />
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:id="@+id/txt_address_place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp"
+                    app:font_family="segoe_semi_bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_transparent_light_main" />
+
+    </LinearLayout>
+
+</LinearLayout>

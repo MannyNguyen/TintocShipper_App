@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/ic_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_header_photo"
+            android:background="@drawable/ic_avatar"
+            android:padding="2dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        <vn.app.tintocshipper.config.MyTextView
+            android:id="@+id/txt_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/color_black"
+            app:font_family="segoe_semi_bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

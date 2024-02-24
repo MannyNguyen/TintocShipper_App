@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="vn.app.tintocshipper.fragment.NewOrderFragment">
+
+    <RelativeLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextWhite"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <vn.app.tintocshipper.config.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            android:text="@string/new_order"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"
+            app:font_family="segoe_semi_bold" />
+
+    </RelativeLayout>
+
+    <vn.app.tintocshipper.config.MyTextView
+        android:id="@+id/txtv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_data"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:font_family = "segoe_semi_bold"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_new_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp">
+    </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

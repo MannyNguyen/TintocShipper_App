@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomFontTextView">
+        <attr name="font_family"/>
+    </declare-styleable>
+
+    <attr name="font_family" format="enum">
+        <enum name="segoe_semi_bold" value="3" />
+        <enum name="segoe_light" value="1" />
+        <enum name="segoe_regular" value="2" />
+        <enum name="segoe_italic" value="4"></enum>
+        <enum name="segoe_bold" value="5"></enum>
+    </attr>
+</resources>

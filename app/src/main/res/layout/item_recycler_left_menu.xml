@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:foreground="?selectableItemBackground"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/iv_item_menu"
+        android:padding="4dp"
+        android:src="@drawable/ic_thongtincuaban"/>
+
+    <vn.app.tintocshipper.config.MyTextView
+        android:id="@+id/txt_text_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@+id/iv_item_menu"
+        android:text="Thông tin của bạn"
+        android:textSize="15sp"
+        android:textColor="@color/colorTextWhite"
+        app:font_family="segoe_regular"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"/>
+
+    <vn.app.tintocshipper.config.MyTextView
+        android:id="@+id/alertNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="2dp"
+        android:textColor="@color/colorTextWhite"
+        android:background="@color/colorPause"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgAlert"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</LinearLayout>

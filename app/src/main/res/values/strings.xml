@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">Tín Tốc Shipper</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Connectivity-->
+    <string name="lost_connect">Không tìm thấy kết nối, khởi động?</string>
+    <string name="lost_location">Vị trí của bạn chưa được bật</string>
+    <string name="exit">Thoát</string>
+    <string name="settings">Cài đặt</string>
+
+    <!--Login screen-->
+    <string name="login">Đăng nhập</string>
+    <string name="have_not_acc_yet">Bạn chưa có tài khoản?</string>
+    <string name="register">Đăng ký</string>
+    <string name="err_email">Vui lòng nhập email</string>
+    <string name="err_pass">Vui lòng nhập mật khẩu</string>
+    <string name="email">Email đăng nhập</string>
+    <string name="password">Password</string>
+
+    <!--New order-->
+    <string name="new_order">Đơn hàng mới</string>
+    <string name="receive_commodity">Lấy hàng</string>
+    <string name="shop_list">Danh sách cửa hàng</string>
+
+    <!--Shop order-->
+    <string name="shop_order">Đơn hàng shop</string>
+    <string name="bts_shop">BTS Shop</string>
+    <string name="receiver_success">Nhận thành công</string>
+    <string name="order_cancel">Hủy đơn hàng</string>
+    <string name="choose_all">Chọn tất cả</string>
+    <string name="all_map">Bản đồ toàn bộ</string>
+
+    <!--Running order-->
+    <string name="running_order">Đơn đang chạy</string>
+    <string name="receiver_name">Tên người nhận</string>
+    <string name="order_detail">Chi tiết đơn hàng</string>
+    <string name="no_order">Hiện tại, không có đơn hàng nào.</string>
+
+    <!--Order list-->
+    <string name="order_list">Danh sách đơn hàng</string>
+    <string name="shop_id">Shop ID</string>
+    <string name="send">Giao</string>
+    <string name="receiver">Nhận</string>
+    <string name="txt_return">Trả hàng</string>
+    <string name="receive_place">Điểm giao</string>
+    <string name="receive_time">Thời gian</string>
+    <string name="receive_status">Tình trạng</string>
+    <string name="enter_order_code">Nhập mã đơn hàng</string>
+    <string name="text_sort">Sắp xếp theo:</string>
+    <string name="order_waiting">Đơn hàng chờ giao</string>
+    <string name="bill_order">Phiếu thu chi</string>
+    <string name="logout_title">Bạn có muốn đăng xuất?</string>
+    <string name="shipping">Đang giao: </string>
+    <string name="taking">Đang lấy: </string>
+    <string name="returning">Đang trả: </string>
+
+    <string name="id">ID</string>
+    <string name="date">Ngày:</string>
+    <string name="item_address">Địa chỉ:</string>
+    <string name="item_signup">Đăng ký</string>
+    <string name="shop">Shop:</string>
+
+    <!--Update status order-->
+    <string name="update_status_order">Cập nhật thông tin đơn hàng</string>
+    <string name="stt_cancel_order">Hủy đơn hàng</string>
+    <string name="stt_receive_success">Giao thành công</string>
+    <string name="stt_return_order">Trả hàng</string>
+    <string name="confirm_success">Xác nhận thành công</string>
+    <string name="stt_send">Gửi</string>
+    <string name="unsuccess_ship">Giao không thành công</string>
+    <string name="cancel_shipping">Hủy giao hàng</string>
+    <string name="cancel_return">Hủy trả hàng</string>
+    <string name="receive_success">Nhận thành công</string>
+    <string name="receive_nextime">Chờ lấy đợt sau</string>
+    <string name="cancel_receive">Hủy nhận</string>
+
+    <!--DebtFragment-->
+    <string name="debt_manage">Quản lý công nợ</string>
+    <string name="from">Từ</string>
+    <string name="to">Đến</string>
+    <string name="total_income">Tổng thu</string>
+    <string name="payed">Đã thanh toán</string>
+    <string name="not_payed">Chưa thanh toán</string>
+    <string name="quantity_of_order">Số lượng đơn hàng</string>
+    <string name="total_value">Tổng giá trị</string>
+    <string name="total_collect">Tổng thu</string>
+    <string name="total_out">Tổng chi</string>
+    <string name="total">Tổng cộng</string>
+    <string name="see_detail">Xem chi tiết</string>
+    <string name="err_time">Vui lòng chọn thời gian</string>
+    <string name="number">STT</string>
+    <string name="order_code">Mã đơn</string>
+    <string name="address">Địa chỉ</string>
+    <string name="money_advance">Ứng trước</string>
+    <string name="total_debt">Tổng công nợ:</string>
+    <string name="order_info">Thông tin đơn hàng</string>
+    <string name="total_fee">Tổng phí</string>
+    <string name="total_order">Tổng đơn: </string>
+    <string name="err_from_to_time">Thời gian ban đầu phải nhỏ hơn thời gian tới</string>
+    <string name="from_date">Từ ngày</string>
+    <string name="to_date">Đến ngày</string>
+
+    <!--Running order-->
+    <!--<string name="API_KEY">AIzaSyAtPrJhe0i5SGdI9R7lGgGSEr4TKcWGMRI</string>-->
+    <string name="API_KEY">AIzaSyAzranF2XZ7QwqEtNFw9jKbTj0keMDLTGk</string>
+    <string-array name="reason">
+        <item>Chọn lý do</item>
+        <item>Không có hàng</item>
+        <item>Shop chưa soạn hàng.</item>
+        <item>Không liên lạc được người gửi.</item>
+        <item>Địa chỉ lấy hàng không đúng</item>
+        <item>Lấy hàng đợt sau</item>
+
+    </string-array>
+    <string-array name="reason1">
+        <item>Chọn lý do</item>
+        <item>Gọi khách 3 lần không bắt máy</item>
+        <item>Số điện thoại thuê bao</item>
+        <item>Sai số điện thoại</item>
+        <item>Khách không có nhà</item>
+        <item>Đổi địa chỉ giao hàng</item>
+        <item>Hàng lỗi, sai hàng</item>
+        <item>Khách không đặt hàng</item>
+        <item> Khách hủy, không nhận hàng</item>
+
+
+    </string-array>
+    <string-array name="reason2">
+        <item>Chọn lý do</item>
+        <item>Trả nhầm hàng</item>
+        <item>Không có người nhận hàng</item>
+
+    </string-array>
+
+    <string-array name="sort">
+        <item>Thời gian</item>
+        <item>Khu vực</item>
+
+    </string-array>
+
+    <!--Shop order detail-->
+    <string name="shop_order_detail">Chi tiết đơn hàng</string>
+    <string name="detail_receive">Chi tiết giao nhận</string>
+    <string name="more_info">Thông tin bổ sung</string>
+    <string name="notice">Lưu ý</string>
+    <string name="call_support">Gọi hỗ trợ</string>
+    <string name="create_success">Khởi tạo thành công!</string>
+    <string name="date_create">Ngày tạo</string>
+    <string name="code_order">Mã đơn hàng:</string>
+    <string name="status_order">Trạng thái đơn hàng</string>
+    <string name="receiver_side">Bên nhận</string>
+    <string name="order_address">Địa chỉ</string>
+    <string name="order">Đơn hàng</string>
+    <string name="commodity">Hàng hóa</string>
+    <string name="weight">Khối lượng</string>
+    <string name="fee_shipping">Phí vận chuyển</string>
+    <string name="date_receiver_forecast">Ngày giao dự kiến</string>
+    <string name="number_of_order">Số lượng đơn hàng</string>
+    <string name="cod">Thu hộ</string>
+    <string name="received">Đã nhận hàng</string>
+    <string name="wait_product">Chờ lấy hàng</string>
+    <string name="wait">Đang xử lý</string>
+    <string name="receiving">Đang giao</string>
+    <string name="delivered">Đã giao</string>
+    <string name="product_payed">Đã thanh toán</string>
+    <string name="rating">Đánh giá</string>
+    <string name="name">Tên</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="note">Ghi chú:</string>
+    <string name="fee_ship">Phí ship</string>
+    <string name="cancel_order">Hủy đơn</string>
+    <string name="return_order">Trả hàng</string>
+    <string name="order_success">Giao thành công</string>
+    <string name="close">Đóng</string>
+    <string name="mess_success">Cập nhật trạng thái thành công</string>
+    <string name="commodity_info">Thông tin hàng hóa</string>
+    <string name="order_note_commodity_name">Tên hàng hóa</string>
+    <string name="time">Thời gian</string>
+    <string name="date_time_create">Ngày giờ tạo</string>
+    <string name="delivery_time">Thời gian giao hàng</string>
+    <string name="place_info">Thông tin địa điểm</string>
+    <string name="sender">Người gửi</string>
+    <string name="photo">Hình ảnh</string>
+    <string name="bill_info">Thông tin hóa đơn</string>
+    <string name="charge_side">Trả phí vận chuyển</string>
+    <string name="cod_money">Tiền thu hộ</string>
+    <string name="cash_advance">Tiền ứng trước</string>
+    <string name="vice_fee">Phụ phí</string>
+    <string name="mediate_fee">Phí trung gian</string>
+    <string name="insurance_fee">Phí bảo hiểm</string>
+    <string name="total_guest_receipts">Tổng thu của khách</string>
+    <string name="shop_income">Thu nhập shop</string>
+    <string name="code_order1">Mã đơn hàng:</string>
+    <string name="charge_side1">Trả phí vận chuyển:</string>
+    <string name="advance_money">Số tiền ứng trước</string>
+    <string name="sender_info">Thông tin người gửi</string>
+    <string name="receiver_info">Thông tin người nhận</string>
+
+    <!--Order bill code-->
+    <string name="bill">Phiếu thu</string>
+    <string name="bill_code">Mã phiếu thu của bạn là:</string>
+
+    <!--Shipper info-->
+    <string name="shipper_info">Thông tin shipper</string>
+    <string name="your_info">Thông tin của bạn</string>
+    <string name="info">Thông tin</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="shipper_name">Họ và tên</string>
+    <string name="shipper_phone">Số điện thoại</string>
+    <string name="shipper_address">Địa chỉ hiện tại</string>
+    <string name="cmnd">Số CMND</string>
+    <string name="country">Quê quán</string>
+    <string name="day_of_birth">Ngày sinh</string>
+    <string name="vehicle_bike">Hiệu xe máy đang sử dụng</string>
+    <string name="err_phone">Vui lòng nhập số điện thoại</string>
+    <string name="err_name">Vui lòng nhập tên</string>
+    <string name="err_address">Vui lòng nhập địa chỉ</string>
+    <string name="err_cmnd">Vui lòng nhập cmnd</string>
+    <string name="err_country">Vui lòng nhập quê quán</string>
+    <string name="err_birthday">Vui lòng nhập ngày sinh</string>
+    <string name="err_vehicle">Vui lòng nhập loại xe</string>
+    <string name="success_update">Cập nhật thông tin thành công</string>
+    <string name="logout">Đăng xuất</string>
+
+    <!--Change password-->
+    <string name="change_password">Thay đổi mật khẩu</string>
+    <string name="current_pass">Mật khẩu hiện tại</string>
+    <string name="new_pass">Mật khẩu mới</string>
+    <string name="confirm_new_pass">Xác nhận mật khẩu</string>
+    <string name="change_pass">Đổi mật khẩu</string>
+    <string name="changepassword">Vui lòng nhập mật khẩu cũ</string>
+    <string name="newpassword">Vui lòng nhập mật khẩu mới</string>
+    <string name="confirmpassword">Vui lòng nhập xác nhận mật khẩu</string>
+    <string name="err_6_char">Mật khẩu phải có ít nhất 6 ký tự</string>
+    <string name="err_new_confirm">Mật khẩu và xác nhận mật khẩu không đồng nhất</string>
+    <string name="change_pass_success">Thay đổi mật khẩu thành công</string>
+
+    <!--Support screen-->
+    <string name="support">Hỗ trợ</string>
+    <string name="support_center">Trung tâm hỗ trợ</string>.
+
+    <string name="hotline">Hotline</string>
+    <string name="hotline_number">0938264867</string>
+    <string name="hotline_number_2">0934038880</string>
+    <string name="support_content">Nội dung cần hỗ trợ hoặc phản hồi</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="send_request">Gửi yêu cầu</string>
+    <string name="err_content">Vui lòng nhập nội dung</string>
+    <string name="success_feedback">Gửi phản hồi thành công</string>
+
+    <!--Update status order-->
+    <string name="err_reason">Vui lòng nhập lý do</string>
+    <string name="return_success">Trả thành công</string>
+    <string name="send_success">Giao thành công</string>
+    <string name="conrifm">Xác nhận</string>
+    <string name="cancel">Hủy</string>
+
+    <string name="no_data">Không có dữ liệu</string>
+
+</resources>

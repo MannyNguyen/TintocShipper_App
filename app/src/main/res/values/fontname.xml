@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="segoe_regular" translatable="false">segoeui</string>
+    <string name="segoe_light" translatable="false">segoeuil</string>
+    <string name="segoe_semi_bold" translatable="false">seguisb</string>
+    <string name="segoe_italic" translatable="false">segoeuii</string>
+    <string name="segoe_bold" translatable="false">segoeuib</string>
+
+</resources>

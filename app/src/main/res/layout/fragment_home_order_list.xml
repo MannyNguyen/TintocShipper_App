@@ -1,0 +1,335 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTextWhite"
+    android:orientation="vertical"
+    tools:context="vn.app.tintocshipper.fragment.HomeOrderListFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:padding="14dp"
+                android:src="@drawable/ic_menu" />
+
+            <vn.app.tintocshipper.config.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                android:text="@string/order_list"
+                android:textColor="@color/txt_title"
+                android:textSize="16sp"
+                app:font_family="segoe_semi_bold" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/ll_receiver"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_checked"
+                    android:gravity="center">
+
+                    <vn.app.tintocshipper.config.MyTextView
+                        android:id="@+id/txt_receiver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/receiver"
+                        android:textColor="@color/colorShopInfoOne"
+                        android:textSize="16sp"
+                        app:font_family="segoe_bold" />
+
+                    <ImageView
+                        android:id="@+id/imgAlert1"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="right"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/ll_delivery"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheck_left"
+                    android:gravity="center">
+
+                    <vn.app.tintocshipper.config.MyTextView
+                        android:id="@+id/txt_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/send"
+                        android:textColor="@color/color_black"
+                        android:textSize="16sp"
+                        app:font_family="segoe_regular" />
+
+                    <ImageView
+                        android:id="@+id/imgAlert2"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/ll_return"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheck_left"
+                    android:gravity="center">
+
+                    <vn.app.tintocshipper.config.MyTextView
+                        android:id="@+id/txt_return"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/txt_return"
+                        android:textColor="@color/color_black"
+                        android:textSize="16sp"
+                        app:font_family="segoe_regular" />
+
+                    <ImageView
+                        android:id="@+id/imgAlert3"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/shaddow"
+                android:padding="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_all_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ic_btn_all_map"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/ic_place" />
+
+                    <vn.app.tintocshipper.config.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all_map"
+                        android:textColor="@color/color_black"
+                        android:textSize="14sp"
+                        app:font_family="segoe_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_linear_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <vn.app.tintocshipper.config.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="4dp"
+                        android:text="@string/text_sort"
+                        android:textColor="@color/txt_title"
+                        android:textSize="14sp"
+                        app:font_family="segoe_regular" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/shipper_info"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/spinner_sort"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <vn.app.tintocshipper.config.MyTextView
+                            android:id="@+id/txt_listShop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_list"
+                            android:textColor="@color/colorShopInfoOne"
+                            android:textSize="14sp"
+                            app:font_family="segoe_semi_bold" />
+
+                        <vn.app.tintocshipper.config.MyTextView
+                            android:id="@+id/txt_listOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_list"
+                            android:textColor="@color/colorShopInfoOne"
+                            android:textSize="14sp"
+                            android:visibility="gone"
+                            app:font_family="segoe_semi_bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/ll_delivery1"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:visibility="gone">
+
+                        <vn.app.tintocshipper.config.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shipping"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPause"
+                            app:font_family="segoe_regular"/>
+
+                        <vn.app.tintocshipper.config.MyTextView
+                            android:id="@+id/txt_delivered"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPause"
+                            app:font_family="segoe_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:id="@+id/txtv_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_data"
+                    android:layout_marginLeft="10dp"
+                    app:font_family = "segoe_semi_bold"
+                    android:visibility="gone"/>
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_order_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="16dp" />
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

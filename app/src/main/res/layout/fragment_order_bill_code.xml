@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="vn.app.tintocshipper.fragment.OrderBillCodeFragment">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp">
+
+        <vn.app.tintocshipper.config.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:font_family="segoe_semi_bold"
+            android:textAllCaps="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/bill"
+            android:textSize="24sp"
+            android:textColor="@color/colorShopInfoOne"/>
+
+        <vn.app.tintocshipper.config.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:font_family="segoe_regular"
+            android:layout_marginTop="10dp"
+            android:text="@string/bill_code"
+            android:textSize="18sp"
+            android:textColor="@color/colorShopInfoTwo"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"/>
+
+        <vn.app.tintocshipper.config.MyTextView
+            android:id="@+id/txt_order_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:font_family="segoe_semi_bold"
+            android:layout_marginTop="10dp"
+            android:text="gdjka"
+            android:textAllCaps="true"
+            android:textSize="40sp"
+            android:textColor="@color/colorShopInfoOne"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

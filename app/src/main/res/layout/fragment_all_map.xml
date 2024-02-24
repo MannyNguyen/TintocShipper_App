@@ -1,0 +1,91 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="vn.app.tintocshipper.fragment.AllMapFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:adjustViewBounds="true"
+                    android:padding="18dp"
+                    android:src="@drawable/ic_back" />
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Bản đồ toàn bộ"
+                    android:textColor="@color/txt_title"
+                    android:textSize="18sp"
+                    app:font_family="segoe_semi_bold">
+
+                </vn.app.tintocshipper.config.MyTextView>
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/container_all_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_poly_bike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_bike" />
+
+        <ImageView
+            android:id="@+id/iv_my_location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_my_location" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

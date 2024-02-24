@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/gray_border_square_box"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/blue_box"
+            android:orientation="vertical">
+
+            <vn.app.tintocshipper.config.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/item_signup"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="14sp"
+                app:font_family="segoe_semi_bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_receive_commodity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="@color/gray"
+            android:orientation="vertical">
+
+            <vn.app.tintocshipper.config.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/confirm"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="14sp"
+                app:font_family="segoe_semi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <vn.app.tintocshipper.config.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:text="@string/shop"
+                android:textSize="12sp"
+                app:font_family="segoe_semi_bold" />
+            <vn.app.tintocshipper.config.MyTextView
+                android:id="@+id/txt_shop_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Dress me up"
+                android:textSize="12sp"
+                android:textColor="@color/color_black"
+                app:font_family="segoe_semi_bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <vn.app.tintocshipper.config.MyTextView
+                    android:id="@+id/txt_phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="4dp"
+                    android:text="Phone number"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorFinish"
+                    app:font_family="segoe_semi_bold" />
+
+                <ImageView
+                    android:id="@+id/iv_call"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_phone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <vn.app.tintocshipper.config.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:text="@string/item_address"
+                android:textSize="12sp"
+                app:font_family="segoe_semi_bold" />
+
+            <vn.app.tintocshipper.config.MyTextView
+                android:id="@+id/txt_shop_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dress me up"
+                android:textSize="12sp"
+                android:textColor="@color/color_black"
+                app:font_family="segoe_semi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

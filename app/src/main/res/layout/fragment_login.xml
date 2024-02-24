@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_login_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="vn.app.tintocshipper.fragment.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_tintoc" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_mail2" />
+
+                <vn.app.tintocshipper.config.MyEditText
+                    android:id="@+id/edt_login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="@color/gray_transparent_main"
+                    android:textSize="16sp"
+                    app:font_family="segoe_italic" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@color/color_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_matkhau" />
+
+                <vn.app.tintocshipper.config.MyEditText
+                    android:id="@+id/edt_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="@color/gray_transparent_main"
+                    android:textSize="16sp"
+                    app:font_family="segoe_italic" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@color/color_black" />
+
+            <vn.app.tintocshipper.config.MyButton
+                android:id="@+id/btn_login"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/black_border_box"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/login"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                app:font_family="segoe_semi_bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

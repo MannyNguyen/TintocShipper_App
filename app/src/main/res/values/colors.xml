@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--<color name="colorPrimaryDark">#ffffff</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#22a5e4</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorShopInfoOne">#58bfe8</color>
+    <color name="colorShopInfoTwo">#254669</color>
+    <color name="colorShopInfoThree">#21a5e5</color>
+    <color name="colorCode">#989898</color>
+    <color name="colorPause">#ea0000</color>
+    <color name="colorFinish">#37cf2c</color>
+    <color name="colorProcessing">#dab715</color>
+    <color name="gray_transparent_light_main">#2099989b</color>
+    <color name="gray_transparent_main">#800a080a</color>
+    <color name="color_black">#000000</color>
+    <color name="txt_title">#393a3c</color>
+    <color name="bg_color">#ffffff</color>
+    <color name="edt_hint">#8f8d8d</color>
+    <color name="border_color">#646464</color>
+    <color name="gray">#44494747</color>
+    <color name="bg2_color">#254669</color>
+    <color name="shipper_info">#ebf3fb</color>
+    <color name="new_color_text">#181818</color>
+    <color name="password_text">#696969</color>
+    <color name="edit_text">#eaf3fb</color>
+    <color name="disable_color">#889db2</color>
+</resources>
